@@ -1,0 +1,57 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    color: white;
+    transition: background 0.5s ease;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Default background */
+body.default {
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
+}
+
+/* Push-up background */
+body.pushBg {
+    background-image: url("https://images.unsplash.com/photo-1599058917212-d750089bc07e");
+}
+
+/* Sit-up background */
+body.sitBg {
+    background-image: url("https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b");
+}
+
+.day {
+    background: rgba(0,0,0,0.5);
+    margin: 30px auto;
+    padding: 20px;
+    width: 280px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    background: orange;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Celebration */
+#celebration {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    display: none;
+    animation: pop 1s ease;
+}
+
+@keyframes pop {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
